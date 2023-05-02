@@ -7,6 +7,7 @@ from example.views import HelloAPI, booksAPI, bookAPI, BooksAPIMixins, BookAPIMi
 # ViewSet
 router = routers.SimpleRouter()
 router.register('books', BookViewSet)
+
 urlpatterns = [
     path('', include(router.urls))
 ]
