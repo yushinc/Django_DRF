@@ -76,7 +76,7 @@ class LoginSerializer(serializers.Serializer):
         )
 
 # 프로필 시리얼라이저
-class ProfileSerializer(serializers.Serializer):
+class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
         fields = ("nickname", "position", "subjects", "image")
